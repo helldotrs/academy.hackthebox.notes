@@ -1,0 +1,6 @@
+General headers: 
+    request & response. 
+    describe the message rather than its contents. 
+    (Date, Connection (close/keep-alive)
+
+Entity headers:
