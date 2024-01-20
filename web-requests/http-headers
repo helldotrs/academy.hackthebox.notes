@@ -1,6 +1,8 @@
 General headers: 
-    request & response. 
     describe the message rather than its contents. 
     (Date, Connection (close/keep-alive)
-
+    request & response. 
 Entity headers:
+    describe the content
+    (Content-Type, Media-Type, Boundary, Content-Length, Content-Encoding)
+    request & response. 
