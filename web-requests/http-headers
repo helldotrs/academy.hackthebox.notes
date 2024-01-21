@@ -1,8 +1,27 @@
-General headers: 
+// FIXME: make flashcards
+
+General headers:
     describe the message rather than its contents. 
     (Date, Connection (close/keep-alive)
-    request & response. 
+    request & response.
+
 Entity headers:
     describe the content
     (Content-Type, Media-Type, Boundary, Content-Length, Content-Encoding)
     request & response. 
+
+Request Headers:
+    used in an HTTP request and do not relate to the content.
+    (Host, User-Agent, Referer, Accept (*/*), Cookie, Authorization)
+    request
+
+Response Headers
+    used in an HTTP response and do not relate to the content
+    (Server, Age, Location, Set-Cookie, WWW-Authenticate)
+    response
+
+Security Headers
+    used to specify certain rules and policies
+    (Content-Security-Policy, Strict-Transport-Security, Referrer-Policy
+    response
+
