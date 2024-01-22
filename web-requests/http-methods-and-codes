@@ -25,9 +25,40 @@ HTTP Methods and Codes
         DELETE
             deletes resource from webserver
             if unsecured can lead to DoS by deleting critical file
-                // FIXME: look up actual definition of DoS
         OPTIONS
             "Returns information about the server, such as the methods accepted by it."
         PATCH
             "Applies partial modifications to the resource at the specified location."
-        
+
+    Response Codes
+        types
+            1##
+                information, does not affect processing of request
+            2##
+                request succeeds
+            3##
+                server redirect
+            4##
+                improper reuqest FROM THE CLIENT. example
+                    request non existing resource
+                    bad format
+        5##
+            HTTP server problem
+
+        common codes
+            200 OK
+            302 Found
+                redirects the client to another URL. example:
+                    to dashboard on login
+            400 Bad Request
+                malformed request, such as:
+                    missing line terminators
+            304 Forbidden
+                *important*
+                client lacks access privileges
+                can be returned if malicious user input detected
+            404 Not Found
+                resource does not exist
+            500 Internal Server Error
+                server cannot process request
+
