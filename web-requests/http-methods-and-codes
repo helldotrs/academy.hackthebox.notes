@@ -1,0 +1,33 @@
+HTTP Methods and Codes
+
+    Common Request Methods
+        GET
+            requests specific resource
+            can be passed in url
+        POST
+            sends data to server.
+            can handle multiple types on input, such as
+                text
+                PDFs
+                other forms of binary data
+            data applied in the request body present after the headers
+            common for
+                login info
+                forms
+                uploading data/files, such as
+                    images
+                    documents
+        HEAD
+            "Requests the headers that would be returned if a GET request was made to the server. It doesn't return the request body and is usually made to check the response length before downloading resources."
+        PUT
+            Creates new resources on server
+            allowing without proper controls may lead to malicious uploads
+        DELETE
+            deletes resource from webserver
+            if unsecured can lead to DoS by deleting critical file
+                // FIXME: look up actual definition of DoS
+        OPTIONS
+            "Returns information about the server, such as the methods accepted by it."
+        PATCH
+            "Applies partial modifications to the resource at the specified location."
+        
