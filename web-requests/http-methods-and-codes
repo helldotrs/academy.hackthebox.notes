@@ -62,3 +62,10 @@ HTTP Methods and Codes
             500 Internal Server Error
                 server cannot process request
 
+            short versions
+                1xx - informational
+                2xx - success
+                3xx - redirection
+                4xx - client error
+                5xx - server error
+
