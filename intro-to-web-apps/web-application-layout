@@ -1,0 +1,10 @@
+Web Application Components
+    client
+    server
+        webserver
+        web app logic
+        database
+    Services (microservices)
+        3rd party integrations
+        web app integrations
+    Functions (serverless)
